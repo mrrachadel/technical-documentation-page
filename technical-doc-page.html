@@ -1,124 +1,220 @@
 <!DOCTYPE html>
 <html>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <style>
     code {
       background-color: #eff0f1;
       font-size: 13px;
       padding: 1px 5px;
     }
+
+    header {
+      display: block;
+      font-size: 1.5em;
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    #main-doc {
+      position: absolute;
+      margin-left: 310px;
+    }
+
+    .nav-bullets {
+        list-style-type: none;
+        margin: 10px;
+    }
+
+    #navbar {
+      position: fixed;
+      min-width: 280px;
+      top: 0px;
+      height: 100%;
+      border-right: solid;
+      border-color: rgba(0, 22, 22, 0.4);
+    }
+
+    .nav-link {
+      font-size: 20px;
+    }
+
+    @media only screen and (max-width: 991px) {
+      header {
+        font-size: 35px;
+      }
+
+      p {
+        font-size: 20px;
+        text-align: justify;
+        margin: 30px;
+      }
+
+      li {
+        font-size: 25px;
+        margin-left: 40px;
+      }
+
+      code {
+        font-size: 16px;
+        padding: 5px 13px;
+      }
+      
+      #main-doc {
+        margin: 30px;
+      }
+
+      #navbar {
+        position: initial;
+        border-right: none;
+      }
+
+      .nav-link {
+        font-size: 30px;
+      }
+
+      .nav-bullets {
+        padding: 5px;
+      }
+
+      .bullets {
+        border: solid 1px gray;
+      }
+    }
   </style>
-  <head>
-    <h1>Technical Documentation Page - HTML5</h1>
-  </head>
+
+  <nav id="navbar">
+    <header>
+      HTML5
+    </header>
+
+    <ul class="bullets">
+      <li class="nav-bullets"><a href="#Introduction" class="nav-link">Introduction</a></li>
+      <li class="nav-bullets"><a href="#HTML5_New_Tags" class="nav-link">HTML5 New Tags</a></li>
+      <li class="nav-bullets"><a href="#Article" class="nav-link">Article</a></li>
+      <li class="nav-bullets"><a href="#Header" class="nav-link">Header</a></li>
+      <li class="nav-bullets"><a href="#Footer" class="nav-link">Footer</a></li>
+      <li class="nav-bullets"><a href="#Section" class="nav-link">Section</a></li>
+      <li class="nav-bullets"><a href="#Other_Elements" class="nav-link">Other Elements</a></li>
+      <li class="nav-bullets"><a href="#References" class="nav-link">References</a></li>
+    </ul>
+   </nav>
 
   <body>
     <main id="main-doc">
-      <section class="main-section" id="introduction">
+      <section class="main-section" id="Introduction">
         <header>
-          <h2>Introduction</h2>
-          <p>
-            Hypertext Markup Language (HTML) is the standard markup language for documents designed 
-            to be displayed in a web browser. It can be assisted by technologies 
-            such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
-          </p>
+          Introduction
+        </header>
+        <p>
+          Hypertext Markup Language (HTML) is the standard markup language for documents designed 
+          to be displayed in a web browser. It can be assisted by technologies 
+          such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+        </p>
 
-          <p>
-            Web browsers receive HTML documents from a web server or from local storage 
-            and render the documents into multimedia web pages. HTML describes the structure 
-            of a web page semantically and originally included cues for the appearance 
-            of the document.
-          </p>
-          </header>
+        <p>
+          Web browsers receive HTML documents from a web server or from local storage 
+          and render the documents into multimedia web pages. HTML describes the structure 
+          of a web page semantically and originally included cues for the appearance 
+          of the document.
+        </p>
       </section>
-      <section class="main-section" id="html5_new_tags">
+      <section class="main-section" id="HTML5_New_Tags">
         <header>
-          <h2>HTML5 - New Tags</h2>
-          <p>Despite making clear that HTML5 came to make our lives easier, I must say it has brought new tags
-            and new elements which did not exist before.
-          </p>
-          <p>In this technical documentation page, we will cover just a couple of the tags of HTML5. Such as:
-            <ul>
-              <li>Article</li>
-              <li>Header</li>
-              <li>Footer</li>
-              <li>Section</li>
-            </ul>
-          </p>
+          HTML5 New Tags
         </header>
-      </section>
-      <section class="main-section" id="article">
-        <header>
-          <h2>Article</h2>
-          <p>As the name can suggest, the tag <code>< article ></code> define and structure a region of your site
-          in order to make it more independent.</p>
-          <code>
-            < article >
-              ...
-            < /article >
-          </code>
-        </header>
-      </section>
-      <section class="main-section" id="header">
-        <header>
-          <h2>Header</h2>
-          <p>Before explaining it, do not make a confunsion with <code>< header ></code> e <code>< head ></code>.
-          Like the its name suggests, it is used to build a header, generally about a page's informations such as its name, slogan,
-          brands or titles.</p>
-          <code>
-            < header >
-            ...
-            < /header >
-          </code>
-        </header>
-      </section>
-      <section class="main-section" id="footer">
-        <header>
-          <h2>Footer</h2>
-          <p>The footer are, generally, piece of information of a site that comes at the bottom of each page.</p>
-            <code>
-              < footer >
-              ...
-              < /footer >
-            </code>
-          <p>However, contrary to common thinking, it is not mandatory to be in the end of the page.</p>
-          <p>Its idea is to provide information about the page and its copyrights and list other interesting links.</p>
-        </header>
-      </section>
-      <section class="main-section" id="section">
-        <header>
-          <h2>Section</h2>
-          <p>This tag is used to define and structure many sections in a page. It is very generic and
-            its use is helpful to organize the elements of a page.</p>
-            <code>
-              < section >
-                ...
-              < /section >
-            </code>
-          <p>With this HTML5 element, you will be able to group the elements which have something in commun, 
-            such as the section in a page of an article, with the author's information and a picture.
-          </p>
-        </header>
-      </section>
-      <section class="main-section" id="other_elements">
-        <header>
-          <h2>Other Elements</h2>
-          <p>The tag list extends. There are many tools and elements to be used in HTML5, such as:
-            <ul>
-              <li>Midia elements: video, audio, embed e source;</li>
-              <li>Form elements: input, output, menu, command, progress, datalist, etc;</li>
-              <li>Graphic elements: canvas.</li>
-            </ul>
-          </p>
-        </header>
-      </section>
-      <section class="main-section" id="references">
-        <header>
-          <h2>Refecences</h2>
+        <p>Despite making clear that HTML5 came to make our lives easier, I must say it has brought new tags
+          and new elements which did not exist before.
+        </p>
+        <p>In this technical documentation page, we will cover just a couple of the tags of HTML5. Such as:
           <ul>
-            <li>You can find out more about them <a href="https://en.wikipedia.org/wiki/HTML#HTML_2">here</a> 
-              and <a href="https://www.htmlprogressivo.net/2014/02/Tutorial-de-HTML5-Novas-Tags-Elementos-Semanticos.html">here</a>.</li>
+            <li>Article</li>
+            <li>Header</li>
+            <li>Footer</li>
+            <li>Section</li>
           </ul>
+        </p>
+      </section>
+      <section class="main-section" id="Article">
+        <header>
+          Article
         </header>
+        <p>As the name can suggest, the tag <code>< article ></code> define and structure a region of your site
+        in order to make it more independent.</p>
+        <code>
+          < article >
+            ...
+          < /article >
+        </code>
+      </section>
+      <section class="main-section" id="Header">
+        <header>
+          Header
+        </header>
+        <p>Before explaining it, do not make a confunsion with <code>< header ></code> e <code>< head ></code>.
+        Like the its name suggests, it is used to build a header, generally about a page's informations such as its name, slogan,
+        brands or titles.</p>
+        <code>
+          < header >
+          ...
+          < /header >
+        </code>
+      </section>
+      <section class="main-section" id="Footer">
+        <header>
+          Footer
+        </header>
+        <p>The footer are, generally, piece of information of a site that comes at the bottom of each page.</p>
+          <code>
+            < footer >
+            ...
+            < /footer >
+          </code>
+        <p>However, contrary to common thinking, it is not mandatory to be in the end of the page.</p>
+        <p>Its idea is to provide information about the page and its copyrights and list other interesting links.</p>
+      </section>
+      <section class="main-section" id="Section">
+        <header>
+          Section
+        </header>
+        <p>This tag is used to define and structure many sections in a page. It is very generic and
+          its use is helpful to organize the elements of a page.</p>
+          <code>
+            < section >
+              ...
+            < /section >
+          </code>
+        <p>With this HTML5 element, you will be able to group the elements which have something in commun, 
+          such as the section in a page of an article, with the author's information and a picture.
+        </p>
+      </section>
+      <section class="main-section" id="Other_Elements">
+        <header>
+          Other Elements
+        </header>
+        <p>The tag list extends. There are many tools and elements to be used in HTML5, such as:
+          <ul>
+            <li>Midia elements: video, audio, embed e source;</li>
+            <li>Form elements: input, output, menu, command, progress, datalist, etc;</li>
+            <li>Graphic elements: canvas.</li>
+          </ul>
+        </p>
+      </section>
+      <section class="main-section" id="References">
+        <header>
+          References
+        </header>
+        <ul>
+          <li>You can find out more about them <a href="https://en.wikipedia.org/wiki/HTML#HTML_2">here</a> 
+            and <a href="https://www.htmlprogressivo.net/2014/02/Tutorial-de-HTML5-Novas-Tags-Elementos-Semanticos.html">here</a>.</li>
+        </ul>
       </section>
     </main>
   </body>
